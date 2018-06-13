@@ -27,6 +27,12 @@ public class TracksActivity extends AppCompatActivity {
         songs.add(new Songs("I Like It", "Invasion of Privacy", "Hip Hop",R.mipmap.invasion_cover));
         songs.add(new Songs("Criminal", "Criminal", "Reggaeton",R.mipmap.criminal_cover));
         songs.add(new Songs("Woman, Amen", "Woman, Amen", "Country",R.mipmap.woman_cover));
+        songs.add(new Songs("Ocean Drive", "Ocean Drive", "Deep House",R.mipmap.ocean_cover));
+        songs.add(new Songs("Triste Perro", "Vikorg", "Rock Espanol",R.mipmap.senor_cover));
+        songs.add(new Songs("Raise your Weapon", "5 Years of mau5", "House",R.mipmap.mouse_cover));
+        songs.add(new Songs("Live It Up", "Official Song 2018 FIFA", "R&B",R.mipmap.fifa_cover));
+        songs.add(new Songs("Cheerleader", "Cheerleader", "Pop",R.mipmap.cheerleader_cover));
+
 
 
         /** Create an {@link SongsAdapter}, whose data source is a list of

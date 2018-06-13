@@ -25,6 +25,12 @@ public class GenderActivity extends AppCompatActivity {
         songs.add(new Songs("Hip Hop",R.mipmap.invasion_cover));
         songs.add(new Songs("Reggaeton",R.mipmap.criminal_cover));
         songs.add(new Songs("Country",R.mipmap.woman_cover));
+        songs.add(new Songs("Deep House",R.mipmap.ocean_cover));
+        songs.add(new Songs("Rock Espanol",R.mipmap.senor_cover));
+        songs.add(new Songs("House",R.mipmap.mouse_cover));
+        songs.add(new Songs("R&B",R.mipmap.fifa_cover));
+        songs.add(new Songs("Pop",R.mipmap.cheerleader_cover));
+
 
         /** Create an {@link SongsAdapter}, whose data source is a list of
          * {@link Songs} The adapter knows how to create list item views for each item

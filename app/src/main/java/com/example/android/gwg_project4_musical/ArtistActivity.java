@@ -27,6 +27,11 @@ public class ArtistActivity extends AppCompatActivity {
         songs.add(new Songs("Cardi B", "I Like It", "Invasion of Privacy", "Hip Hop",R.mipmap.invasion_cover));
         songs.add(new Songs("Ozuna", "Criminal", "Criminal", "Reggaeton",R.mipmap.criminal_cover));
         songs.add(new Songs("Dierks Bentley", "Woman, Amen", "Woman, Amen", "Country",R.mipmap.woman_cover));
+        songs.add(new Songs("Duke Dumont", "Ocean Drive", "Ocean Drive", "Deep House",R.mipmap.ocean_cover));
+        songs.add(new Songs("Señor Loop", "Triste Perro", "Vikorg", "Rock Espanol",R.mipmap.senor_cover));
+        songs.add(new Songs("deadmau5", "Raise your Weapon", "5 Years of mau5", "House",R.mipmap.mouse_cover));
+        songs.add(new Songs("Nicky Jam", "Live It Up", "Official Song 2018 FIFA", "R&B",R.mipmap.fifa_cover));
+        songs.add(new Songs("Omi", "Cheerleader", "Cheerleader", "Pop",R.mipmap.cheerleader_cover));
 
         /** Create an {@link SongsAdapter}, whose data source is a list of
         * {@link Songs} The adapter knows how to create list item views for each item
