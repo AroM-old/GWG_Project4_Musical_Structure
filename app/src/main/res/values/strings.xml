@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Musica</string>
+    <string name="artist_name">Michael Jackson</string>
+    <string name="track_name">Bad</string>
+    <string name="album_name">Bad 25th Anniversary</string>
+    <string name="gender_name">Pop</string>
+    <string name="artist_category">Artist</string>
+    <string name="artist_category_information">Check your favorite songs by artist name</string>
+    <string name="albums_category">Albums</string>
+    <string name="albums_category_information">Check your best musical albums</string>
+    <string name="tracks_category">Tracks</string>
+    <string name="tracks_category_information">Check your favorite tracks songs</string>
+    <string name="genre_category">Genre</string>
+    <string name="genre_category_information">Check your favorite music gender</string>
 </resources>
