@@ -20,16 +20,16 @@ public class GenderActivity extends AppCompatActivity {
         ArrayList<Songs> songs = new ArrayList<>();
 
         //Populate the ArrayList with songs information
-        songs.add(new Songs("Pop", R.mipmap.albumbad));
-        songs.add(new Songs("Pop",R.mipmap.divide_cover));
-        songs.add(new Songs("Hip Hop",R.mipmap.invasion_cover));
-        songs.add(new Songs("Reggaeton",R.mipmap.criminal_cover));
-        songs.add(new Songs("Country",R.mipmap.woman_cover));
-        songs.add(new Songs("Deep House",R.mipmap.ocean_cover));
-        songs.add(new Songs("Rock Espanol",R.mipmap.senor_cover));
-        songs.add(new Songs("House",R.mipmap.mouse_cover));
-        songs.add(new Songs("R&B",R.mipmap.fifa_cover));
-        songs.add(new Songs("Pop",R.mipmap.cheerleader_cover));
+        songs.add(new Songs(getString(R.string.pop_genre), R.drawable.albumbad));
+        songs.add(new Songs(getString(R.string.pop_genre), R.drawable.divide_cover));
+        songs.add(new Songs(getString(R.string.hip_hop_genre), R.drawable.invasion_cover));
+        songs.add(new Songs(getString(R.string.reggaettn_genre), R.drawable.criminal_cover));
+        songs.add(new Songs(getString(R.string.country_genre), R.drawable.woman_cover));
+        songs.add(new Songs(getString(R.string.deep_house_genre), R.drawable.ocean_cover));
+        songs.add(new Songs(getString(R.string.rock_espanol_genre), R.drawable.senor_cover));
+        songs.add(new Songs(getString(R.string.house_genre), R.drawable.mouse_cover));
+        songs.add(new Songs(getString(R.string.r_b_genre), R.drawable.fifa_cover));
+        songs.add(new Songs(getString(R.string.pop_genre), R.drawable.cheerleader_cover));
 
 
         /** Create an {@link SongsAdapter}, whose data source is a list of

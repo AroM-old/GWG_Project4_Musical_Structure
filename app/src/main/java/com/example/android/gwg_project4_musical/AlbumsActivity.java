@@ -20,16 +20,17 @@ public class AlbumsActivity extends AppCompatActivity {
         ArrayList<Songs> songs = new ArrayList<>();
 
         //Populate the ArrayList with songs information
-        songs.add(new Songs("Bad 25th Anniversary", "Pop", R.mipmap.albumbad));
-        songs.add(new Songs("Divide", "Pop",R.mipmap.divide_cover));
-        songs.add(new Songs("Invasion of Privacy", "Hip Hop",R.mipmap.invasion_cover));
-        songs.add(new Songs("Criminal", "Reggaeton",R.mipmap.criminal_cover));
-        songs.add(new Songs("Woman, Amen", "Country",R.mipmap.woman_cover));
-        songs.add(new Songs("Ocean Drive", "Deep House",R.mipmap.ocean_cover));
-        songs.add(new Songs("Vikorg", "Rock Espanol",R.mipmap.senor_cover));
-        songs.add(new Songs("5 Years of mau5", "House",R.mipmap.mouse_cover));
-        songs.add(new Songs("Official Song 2018 FIFA", "R&B",R.mipmap.fifa_cover));
-        songs.add(new Songs("Cheerleader", "Pop",R.mipmap.cheerleader_cover));
+        songs.add(new Songs(getString(R.string.bad_album), getString(R.string.pop_genre), R.drawable.albumbad));
+        songs.add(new Songs(getString(R.string.divide_album), getString(R.string.pop_genre), R.drawable.divide_cover));
+        songs.add(new Songs(getString(R.string.invasion_album), getString(R.string.hip_hop_genre), R.drawable.invasion_cover));
+        songs.add(new Songs(getString(R.string.criminal_album), getString(R.string.reggaettn_genre), R.drawable.criminal_cover));
+        songs.add(new Songs(getString(R.string.woman_amen_album), getString(R.string.country_genre), R.drawable.woman_cover));
+        songs.add(new Songs(getString(R.string.ocean_drive_album), getString(R.string.deep_house_genre), R.drawable.ocean_cover));
+        songs.add(new Songs(getString(R.string.vikorg_album), getString(R.string.rock_espanol_genre), R.drawable.senor_cover));
+        songs.add(new Songs(getString(R.string.five_years_album), getString(R.string.house_genre), R.drawable.mouse_cover));
+        songs.add(new Songs(getString(R.string.fifa2018_album), getString(R.string.r_b_genre), R.drawable.fifa_cover));
+        songs.add(new Songs(getString(R.string.cheerleader_album), getString(R.string.pop_genre), R.drawable.cheerleader_cover));
+
 
         /** Create an {@link SongsAdapter}, whose data source is a list of
          * {@link Songs} The adapter knows how to create list item views for each item
