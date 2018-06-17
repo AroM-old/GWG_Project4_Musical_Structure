@@ -19,7 +19,8 @@
         <activity android:name=".ArtistActivity" />
         <activity android:name=".AlbumsActivity" />
         <activity android:name=".TracksActivity" />
-        <activity android:name=".GenderActivity"></activity>
+        <activity android:name=".GenderActivity" />
+        <activity android:name=".NowPlayingActivity"></activity>
     </application>
 
 </manifest>

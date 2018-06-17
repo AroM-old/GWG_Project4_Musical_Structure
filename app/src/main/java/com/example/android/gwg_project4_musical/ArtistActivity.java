@@ -22,7 +22,7 @@ public class ArtistActivity extends AppCompatActivity {
         ArrayList<Songs> songs = new ArrayList<>();
 
         //Populate the ArrayList with songs information
-        songs.add(new Songs(getString(R.string.artist_jackson),getString(R.string.track_bad), getString(R.string.bad_album), getString(R.string.pop_genre), R.drawable.albumbad));
+        songs.add(new Songs(getString(R.string.artist_jackson), getString(R.string.track_bad), getString(R.string.bad_album), getString(R.string.pop_genre), R.drawable.albumbad));
         songs.add(new Songs(getString(R.string.artist_sheeran),getString(R.string.track_perfect), getString(R.string.divide_album), getString(R.string.pop_genre), R.drawable.divide_cover));
         songs.add(new Songs(getString(R.string.artist_cardib),getString(R.string.track_i_like_it), getString(R.string.invasion_album), getString(R.string.hip_hop_genre), R.drawable.invasion_cover));
         songs.add(new Songs(getString(R.string.artist_ozuna),getString(R.string.track_criminal), getString(R.string.criminal_album), getString(R.string.reggaettn_genre), R.drawable.criminal_cover));

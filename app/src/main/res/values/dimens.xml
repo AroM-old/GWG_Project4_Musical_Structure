@@ -2,4 +2,16 @@
 <resources>
     <dimen name="default_padding">16dp</dimen>
     <dimen name="list_items_height">100dp</dimen>
+    <dimen name="seventy_two">72dp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="sixteen">16dp</dimen>
+    <dimen name="sixteen_text">16sp</dimen>
+    <dimen name="width_133">133dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="twelve_text">12sp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="width_160">160dp</dimen>
+    <dimen name="height_190">190dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="one">1dp</dimen>
 </resources>

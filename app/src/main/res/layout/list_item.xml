@@ -1,83 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/list_items_height"
+    android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:padding="16dp">
+    android:padding="@dimen/sixteen">
+
 
     <ImageView
         android:id="@+id/album_image_view"
-        android:layout_width="72dp"
-        android:layout_height="72dp"
-        android:paddingRight="@dimen/default_padding" />
+        android:layout_width="@dimen/seventy_two"
+        android:layout_height="@dimen/seventy_two"
+        android:layout_marginLeft="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginTop="@dimen/eight"
+        android:paddingRight="@dimen/default_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/list_items_height"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_toRightOf="@id/album_image_view"
-        android:orientation="vertical"
-        android:paddingLeft="16dp">
 
-        <TextView
-            android:id="@+id/artist_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:fontFamily="serif"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_weight="1"
-            android:gravity="bottom"
-            android:textAppearance="?android:textAppearanceMedium"
-            tools:text="@string/artist_name" />
+    <TextView
+        android:id="@+id/artist_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_weight="1"
+        android:fontFamily="serif"
+        android:gravity="bottom"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="@dimen/sixteen_text"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/album_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/artist_name" />
 
-        <TextView
-            android:id="@+id/tracks_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_weight="1"
-            android:gravity="top"
-            android:textColor="@color/colorPrimary"
-            android:textSize="12sp"
-            android:textAppearance="?android:textAppearanceMedium"
-            tools:text="@string/track_name" />
+    <TextView
+        android:id="@+id/tracks_text_view"
+        android:layout_width="@dimen/width_133"
+        android:layout_height="@dimen/sixteen"
+        android:layout_marginLeft="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginTop="@dimen/two"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/twelve_text"
+        app:layout_constraintStart_toEndOf="@+id/album_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/artist_text_view"
+        tools:text="@string/track_name" />
 
-        <TextView
-            android:id="@+id/albums_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_weight="1"
-            android:gravity="top"
-            android:textColor="@color/colorAccent"
-            android:textSize="12sp"
-            android:textStyle="italic"
-            android:textAppearance="?android:textAppearanceMedium"
-            tools:text="@string/album_name" />
+    <TextView
+        android:id="@+id/albums_text_view"
+        android:layout_width="@dimen/width_133"
+        android:layout_height="@dimen/sixteen"
+        android:layout_marginLeft="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginTop="@dimen/two"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/twelve_text"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/album_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tracks_text_view"
+        tools:text="@string/album_name" />
 
-        <TextView
-            android:id="@+id/gender_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_weight="1"
-            android:gravity="top"
-            android:textColor="@color/colorAccent"
-            android:textSize="12sp"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textStyle="italic"
-            tools:text="@string/gender_name" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/gender_text_view"
+        android:layout_width="@dimen/width_133"
+        android:layout_height="@dimen/sixteen"
+        android:layout_marginLeft="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginTop="@dimen/two"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/twelve_text"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/album_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/albums_text_view"
+        tools:text="@string/gender_name" />
 
     <ImageView
         android:id="@+id/play_image_view"
-        android:layout_width="72dp"
-        android:layout_height="72dp"
+        android:layout_width="@dimen/seventy_two"
+        android:layout_height="@dimen/seventy_two"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="16dp"
-        android:src="@drawable/ic_play_circle_filled_black_24dp" />
+        android:layout_marginEnd="@dimen/eight"
+        android:layout_marginLeft="@dimen/eight"
+        android:layout_marginRight="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginTop="@dimen/eight"
+        android:src="@drawable/ic_play_circle_filled_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/album_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
