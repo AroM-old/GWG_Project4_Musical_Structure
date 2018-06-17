@@ -7,9 +7,9 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 /**
- * {@link GenderActivity} Show a list of music gender
+ * {@link GenreActivity} Show a list of music gender
  * */
-public class GenderActivity extends AppCompatActivity {
+public class GenreActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -16,11 +16,41 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ArtistActivity" />
-        <activity android:name=".AlbumsActivity" />
-        <activity android:name=".TracksActivity" />
-        <activity android:name=".GenderActivity" />
-        <activity android:name=".NowPlayingActivity"></activity>
+        <activity
+            android:name=".ArtistActivity"
+            android:label="@string/artist_category"
+            android:parentActivityName=".MainActivity">
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".AlbumsActivity"
+            android:label="@string/albums_category"
+            android:parentActivityName=".MainActivity">
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".TracksActivity"
+            android:label="@string/tracks_category"
+            android:parentActivityName=".MainActivity">
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".GenreActivity"
+            android:label="@string/genre_category"
+            android:parentActivityName=".MainActivity">
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".NowPlayingActivity"
+            android:label="@string/now_playing"
+            android:parentActivityName=".MainActivity">
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"/>
+        </activity>
+
     </application>
 
 </manifest>

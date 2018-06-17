@@ -70,13 +70,13 @@ public class MainActivity extends AppCompatActivity {
         //Find the gender card view item to show gender category
         CardView gender = findViewById(R.id.gender_card_view);
 
-        //Set a click listener to open {@link GenderActivity} class
+        //Set a click listener to open {@link GenreActivity} class
         gender.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                //Create a new intent to open the {@link GenderActivity}
-                Intent genderIntent = new Intent(MainActivity.this, GenderActivity.class);
+                //Create a new intent to open the {@link GenreActivity}
+                Intent genderIntent = new Intent(MainActivity.this, GenreActivity.class);
 
                 //Start new activity
                 startActivity(genderIntent);

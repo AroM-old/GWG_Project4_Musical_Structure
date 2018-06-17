@@ -14,4 +14,5 @@
     <dimen name="height_190">190dp</dimen>
     <dimen name="five">5dp</dimen>
     <dimen name="one">1dp</dimen>
+    <dimen name="twenty_four_text">24sp</dimen>
 </resources>

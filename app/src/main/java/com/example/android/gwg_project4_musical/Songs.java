@@ -9,19 +9,19 @@ package com.example.android.gwg_project4_musical;
 public class Songs {
 
     /** String resource ID for artist name */
-    private String mArtist;
+    private String ArtistName;
 
     /** String resource ID for albums name */
-    private String mAlbums;
+    private String AlbumsName;
 
     /** String resource ID for tracks name */
-    private String mTracks;
+    private String TracksName;
 
     /** String resource ID for gender name */
-    private  String mGender;
+    private  String SongGenre;
 
     /** String resource ID for albums images name */
-    private int mImageResId;
+    private int ImageResId;
 
     /**
      * Create a new Songs object.
@@ -33,11 +33,11 @@ public class Songs {
      * @param ImageResId is the drawable resource ID for the album's cover.
      */
     public Songs(String Artist,  String Tracks, String Albums, String Gender, int ImageResId){
-        mArtist = Artist;
-        mTracks = Tracks;
-        mAlbums = Albums;
-        mGender = Gender;
-        mImageResId = ImageResId;
+        ArtistName = Artist;
+        TracksName = Tracks;
+        AlbumsName = Albums;
+        SongGenre = Gender;
+        this.ImageResId = ImageResId;
     }
 
     /**
@@ -49,10 +49,10 @@ public class Songs {
      * @param ImageResId is the drawable resource ID for the album's cover.
      */
     public Songs(String Tracks, String Albums, String Gender, int ImageResId){
-        mTracks = Tracks;
-        mAlbums = Albums;
-        mGender = Gender;
-        mImageResId = ImageResId;
+        TracksName = Tracks;
+        AlbumsName = Albums;
+        SongGenre = Gender;
+        this.ImageResId = ImageResId;
     }
 
     /**
@@ -63,9 +63,9 @@ public class Songs {
      * @param ImageResId is the drawable resource ID for the album's cover.
      */
     public Songs(String Albums, String Gender, int ImageResId){
-        mAlbums = Albums;
-        mGender = Gender;
-        mImageResId = ImageResId;
+        AlbumsName = Albums;
+        SongGenre = Gender;
+        this.ImageResId = ImageResId;
     }
 
     /**
@@ -75,42 +75,42 @@ public class Songs {
      * @param ImageResId is the drawable resource ID for the album's cover.
      */
     public Songs(String Gender, int ImageResId){
-        mGender = Gender;
-        mImageResId = ImageResId;
+        SongGenre = Gender;
+        this.ImageResId = ImageResId;
     }
 
     /**
      * Get the string resource ID for the artist's name
      */
     public String getArtist() {
-        return mArtist;
+        return ArtistName;
     }
 
     /**
      * Get the string resource ID for the Album's name
      */
     public String getAlbums() {
-        return mAlbums;
+        return AlbumsName;
     }
 
     /**
      * Get the string resource ID for the Track's name
      */
     public String getTracks() {
-        return mTracks;
+        return TracksName;
     }
 
     /**
      * Get the string resource ID for the Gender's name
      */
     public String getGender() {
-        return mGender;
+        return SongGenre;
     }
 
     /**
      * Get the drawable resource ID for the album's cover
      */
     public int getImageResId() {
-        return mImageResId;
+        return ImageResId;
     }
 }

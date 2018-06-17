@@ -6,4 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".NowPlayingActivity">
 
+    <ImageView
+        android:id="@+id/now_playing_album_imageview"
+        android:layout_width="290dp"
+        android:layout_height="240dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/album_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999"
+        app:srcCompat="@drawable/albumbad" />
+
+    <TextView
+        android:id="@+id/now_playing_track_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixteen"
+        android:text="@string/track_bad"
+        android:textSize="@dimen/twenty_four_text"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/now_playing_album_imageview" />
+
+    <TextView
+        android:id="@+id/now_playing_album_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/album_name"
+        android:textSize="@dimen/twenty_four_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/now_playing_track_textview" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="147dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/now_playing_album_textview"
+        app:srcCompat="@drawable/ic_play_circle_filled_black_24dp" />
 </android.support.constraint.ConstraintLayout>

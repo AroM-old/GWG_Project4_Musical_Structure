@@ -1,7 +1,10 @@
 package com.example.android.gwg_project4_musical;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -19,7 +22,7 @@ public class ArtistActivity extends AppCompatActivity {
         setContentView(R.layout.songs_list);
 
         //Create an ArrayList of Songs objects
-        ArrayList<Songs> songs = new ArrayList<>();
+        final ArrayList<Songs> songs = new ArrayList<>();
 
         //Populate the ArrayList with songs information
         songs.add(new Songs(getString(R.string.artist_jackson), getString(R.string.track_bad), getString(R.string.bad_album), getString(R.string.pop_genre), R.drawable.albumbad));
@@ -42,5 +45,15 @@ public class ArtistActivity extends AppCompatActivity {
         // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = findViewById(R.id.songs_list_view);
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Songs currentSong = songs.get(position);
+
+                Intent data = new Intent(ArtistActivity.this, NowPlayingActivity.class);
+                startActivity(data);
+            }
+        });
     }
 }
