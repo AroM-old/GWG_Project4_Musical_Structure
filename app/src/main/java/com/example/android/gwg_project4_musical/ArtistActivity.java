@@ -46,6 +46,7 @@ public class ArtistActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.songs_list_view);
         listView.setAdapter(adapter);
 
+        //TODO pack some data and send it to the next 'Now Playing' activity
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -55,5 +56,7 @@ public class ArtistActivity extends AppCompatActivity {
                 startActivity(data);
             }
         });
+
+        //TODO adding bottom navigation functions to back home, activity or now playing
     }
 }

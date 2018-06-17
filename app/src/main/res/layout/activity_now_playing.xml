@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NowPlayingActivity">
-
+<!-- TODO when user press in the back arrow the activity should back to the category activity-->
     <ImageView
         android:id="@+id/now_playing_album_imageview"
         android:layout_width="290dp"
