@@ -6,19 +6,19 @@
         android:id="@+id/back_home"
         android:enabled="true"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="Main"
+        android:title="@string/nav_main"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/artist"
         android:enabled="true"
         android:icon="@drawable/ic_record_voice_over_black_24dp"
-        android:title="Artist"
+        android:title="@string/nav_artist"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/now_playing"
         android:enabled="true"
         android:icon="@drawable/ic_play_circle_filled_black_24dp"
-        android:title="Playing"
+        android:title="@string/nav_playing"
         app:showAsAction="ifRoom" />
 
 

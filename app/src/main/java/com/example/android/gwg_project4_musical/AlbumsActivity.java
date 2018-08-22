@@ -32,10 +32,10 @@ public class AlbumsActivity extends AppCompatActivity {
         songs.add(new Songs(getString(R.string.cheerleader_album), getString(R.string.pop_genre), R.drawable.cheerleader_cover));
 
 
-        /** Create an {@link SongsAdapter}, whose data source is a list of
-         * {@link Songs} The adapter knows how to create list item views for each item
-         * in the list.
-         **/
+        /* Create an {@link SongsAdapter}, whose data source is a list of
+          {@link Songs} The adapter knows how to create list item views for each item
+          in the list.
+         */
         SongsAdapter adapter = new SongsAdapter(this, songs);
 
         // Get a reference to the ListView, and attach the adapter to the listView.

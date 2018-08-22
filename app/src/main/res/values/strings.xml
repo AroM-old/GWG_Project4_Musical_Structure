@@ -51,4 +51,7 @@
     <string name="artist_deadmouse">deadmau5</string>
     <string name="artist_jam">Nicky Jam</string>
     <string name="artist_omi">Omi</string>
+    <string name="nav_main">Main</string>
+    <string name="nav_artist">Artist</string>
+    <string name="nav_playing">Playing</string>
 </resources>
